@@ -36,11 +36,11 @@
         font-family: "Hiragino Maru Gothic ProN", "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", sans-serif;
         -webkit-text-size-adjust: 100%;
       }
-      .wrap { max-width: 1120px; margin: 0 auto; padding: 10px 16px 14px; }
+      .wrap { max-width: 1120px; margin: 0 auto; padding: 6px 16px 8px; }
       .hidden { display: none !important; }
 
-      header.top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 2px 0 10px; }
-      header.top h1 { font-size: clamp(24px, 4.6vw, 34px); margin: 0; letter-spacing: .02em; }
+      header.top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 0 0 6px; }
+      header.top h1 { font-size: clamp(23px, 4.6vw, 30px); margin: 0; letter-spacing: .02em; }
       .chip-grade { background: var(--primary); color: #fff; border-radius: 999px; padding: 5px 14px; font-size: 14px; font-weight: 700; }
       .sound-toggle { margin-left: auto; border: 2px solid var(--line); background: #fff; border-radius: 999px; padding: 8px 16px; font-size: 15px; font-weight: 700; cursor: pointer; color: var(--ink); }
       .sound-toggle:active { transform: scale(.97); }
@@ -76,14 +76,14 @@
       footer.note { margin-top: 10px; color: var(--muted); font-size: 13px; text-align: center; }
 
       /* ---------- 共通ボタン・パネル ---------- */
-      .back-row { margin-bottom: 10px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+      .back-row { margin-bottom: 6px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
       .back-row .br-title { font-size: 19px; font-weight: 800; }
-      .btn { border: 2px solid var(--line); background: #fff; color: var(--ink); border-radius: 999px; padding: 10px 22px; font: inherit; font-size: 16px; font-weight: 700; cursor: pointer; }
+      .btn { border: 2px solid var(--line); background: #fff; color: var(--ink); border-radius: 999px; padding: 8px 20px; font: inherit; font-size: 16px; font-weight: 700; cursor: pointer; }
       .btn.primary { background: var(--primary); border-color: var(--primary); color: #fff; }
       .btn.big { font-size: 19px; padding: 13px 30px; }
       .btn:active { transform: scale(.97); }
       .btn:disabled { opacity: .45; cursor: default; }
-      .panel { background: var(--card); border: 2px solid var(--line); border-radius: var(--radius); padding: 12px 18px; }
+      .panel { background: var(--card); border: 2px solid var(--line); border-radius: var(--radius); padding: 10px 16px; }
 
       /* ---------- ナビキャラ ---------- */
       .navi { display: inline-flex; align-items: center; gap: 10px; }
@@ -98,18 +98,18 @@
       .frac.hl { color: var(--primary-dark); }
 
       /* ---------- 分数バー ---------- */
-      .bar-block { margin: 5px 0; }
-      .bar-head { display: flex; align-items: center; gap: 10px; margin-bottom: 2px; font-weight: 800; font-size: 15px; }
+      .bar-block { margin: 3px 0; }
+      .bar-head { display: flex; align-items: center; gap: 10px; margin-bottom: 0; font-weight: 800; font-size: 14px; }
       .bar-head .bar-eq { color: var(--muted); font-size: 14px; font-weight: 700; }
-      .bar { display: flex; height: 44px; border: 3px solid var(--bar-line); border-radius: 8px; overflow: hidden; background: #eef2f5; }
-      .bar.small { height: 30px; }
+      .bar { display: flex; height: 26px; border: 3px solid var(--bar-line); border-radius: 8px; overflow: hidden; background: #eef2f5; }
+      .bar.small { height: 20px; }
       .bar .cell { flex: 1 1 0; border-right: 2px solid var(--bar-line); background: #f7fafc; min-width: 0; }
       .bar .cell:last-child { border-right: none; }
       .bar .cell.on { background: var(--bar-blue); }
       .bar .cell.on-b { background: var(--bar-blue-soft); }
       .bar .cell.removed { background: repeating-linear-gradient(45deg, #f6b352 0 7px, #fde3b3 7px 14px); }
       .bar .cell.ghost { background: #dfe7ee; }
-      .bar-caption { font-size: 14px; color: var(--muted); font-weight: 700; margin-top: 3px; }
+      .bar-caption { font-size: 13px; color: var(--muted); font-weight: 700; margin-top: 1px; }
       .bar-caption b { color: var(--primary-dark); }
       /* 通分の分割アニメーション */
       .bar.split .grp { flex: 1 1 0; display: flex; border-right: 3px solid var(--bar-line); min-width: 0; }
@@ -121,53 +121,86 @@
       .bar.split .grp.off { background: #f7fafc; }
       .anim-badge { display: inline-block; background: var(--amber); color: #fff; font-weight: 900; border-radius: 999px; padding: 2px 12px; font-size: 15px; margin-left: 8px; opacity: 0; transform: scale(.6); transition: opacity .3s, transform .3s; }
       .anim-badge.show { opacity: 1; transform: scale(1); }
-      .equal-badge { display: inline-block; background: var(--good); color: #fff; font-weight: 800; border-radius: 999px; padding: 4px 16px; font-size: 16px; margin-top: 6px; }
+      .equal-badge { display: inline-block; background: var(--good); color: #fff; font-weight: 800; border-radius: 999px; padding: 3px 14px; font-size: 15px; margin-top: 4px; }
 
       /* ---------- クイズ画面 ---------- */
-      .quiz-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; }
+      .quiz-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 42px; }
+      .quiz-head .navi-avatar { width: 36px; height: 42px; }
+      .quiz-head .navi-avatar-img { height: 42px; }
       .progress-label { font-weight: 800; font-size: 16px; color: var(--muted); white-space: nowrap; }
-      .progress-bar { height: 10px; background: var(--primary-soft); border-radius: 999px; overflow: hidden; margin: 2px 0 6px; }
+      .progress-bar { height: 10px; background: var(--primary-soft); border-radius: 999px; overflow: hidden; margin: 2px 0 3px; }
       #progress-fill { height: 100%; background: var(--primary); border-radius: 999px; transition: width .3s; }
       .quiz-layout { display: grid; grid-template-columns: 1fr 288px; gap: 18px; align-items: start; }
-      .problem { font-size: 29px; font-weight: 900; text-align: center; letter-spacing: .02em; margin: 0 0 4px; min-height: 46px; }
+      .problem { font-size: 23px; font-weight: 900; text-align: center; letter-spacing: .02em; margin: 0 0 2px; min-height: 38px; }
       .problem .op { margin: 0 .15em; }
-      .step-label { display: inline-block; background: var(--primary); color: #fff; font-size: 14px; font-weight: 800; border-radius: 999px; padding: 4px 14px; margin-bottom: 6px; }
-      .step-prompt { font-size: 17px; font-weight: 700; line-height: 1.5; margin-bottom: 6px; }
-      .step-prompt .frac { font-size: 20px; }
+      .step-label { display: inline-block; background: var(--primary); color: #fff; font-size: 14px; font-weight: 800; border-radius: 999px; padding: 3px 12px; margin-bottom: 6px; }
+      .step-prompt { font-size: 16px; font-weight: 700; line-height: 1.45; margin-bottom: 4px; }
+      .step-prompt .frac { font-size: 18px; }
       .choices { display: flex; gap: 10px; flex-wrap: wrap; }
-      .choice-btn { border: 3px solid var(--primary); background: #fff; color: var(--primary-dark); border-radius: 14px; padding: 10px 22px; font: inherit; font-size: 22px; font-weight: 800; cursor: pointer; min-width: 92px; min-height: 54px; }
+      .choice-btn { border: 3px solid var(--primary); background: #fff; color: var(--primary-dark); border-radius: 14px; padding: 8px 22px; font: inherit; font-size: 22px; font-weight: 800; cursor: pointer; min-width: 92px; min-height: 50px; }
       .choice-btn:active { transform: scale(.96); }
       .choice-btn .frac { font-size: 22px; }
 
       .field-row { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; margin: 6px 0; }
       .field-cell { text-align: center; }
       .field-cell .f-label { font-size: 14px; font-weight: 800; color: var(--muted); margin-bottom: 4px; }
-      .num-field { min-width: 76px; height: 54px; padding: 0 10px; display: inline-flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 900; border: 3px solid var(--line); border-radius: 12px; background: #fff; cursor: pointer; font-variant-numeric: tabular-nums; }
-      .num-field.active { border-color: var(--amber); background: var(--amber-soft); }
-      .num-field.done { border-color: var(--good); background: var(--good-soft); }
+      .num-field { min-width: 68px; height: 52px; padding: 0 10px; display: inline-flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 900; border: 3px solid var(--line); border-radius: 12px; background: #fff; cursor: pointer; font-variant-numeric: tabular-nums; user-select: none; -webkit-user-select: none; }
+      .num-field.empty { color: #cdbfa6; }
+      .num-field.active { border-color: var(--amber); background: var(--amber-soft); box-shadow: 0 0 0 4px rgba(245,166,35,.25); animation: pulse 1.2s ease-in-out infinite; }
+      .num-field.done { border-color: var(--good); background: var(--good-soft); color: var(--good); box-shadow: none; animation: none; cursor: default; }
+      .num-field.wrong { border-color: var(--bad); background: var(--bad-soft); color: var(--bad); box-shadow: none; animation: shake .45s; }
+      @keyframes pulse { 0%, 100% { box-shadow: 0 0 0 3px rgba(245,166,35,.18); } 50% { box-shadow: 0 0 0 6px rgba(245,166,35,.35); } }
+      @keyframes shake { 0%, 100% { transform: translateX(0); } 20% { transform: translateX(-7px); } 40% { transform: translateX(7px); } 60% { transform: translateX(-5px); } 80% { transform: translateX(5px); } }
+      @keyframes fadeUp { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+      /* 分数のかたちの入力欄（上＝分子／下＝分母） */
+      .frac-in { display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle; margin: 0 .35em; padding: 4px 10px; background: #fffaf2; border: 2px dashed var(--line); border-radius: 16px; }
+      .frac-in .num-field, .frac-in .fixed { min-width: 62px; height: 40px; font-size: 25px; }
+      .frac-in .fi-line { width: 100%; height: 4px; background: var(--ink); border-radius: 3px; margin: 2px 0; }
+      .frac-in .fixed { min-width: 72px; height: 58px; display: inline-flex; align-items: center; justify-content: center; font-size: 25px; font-weight: 900; color: var(--muted); background: #f3ece0; border: 3px solid #eadfca; border-radius: 12px; }
+      .frac-in-note { font-size: 14px; font-weight: 700; color: var(--muted); margin-left: 4px; }
+      .t-text { font-size: 19px; font-weight: 800; color: var(--muted); }
+      .frac.ghost .fn, .frac.ghost .fd { color: #cdbfa6; }
+
+      /* ステップの進み具合・これまでの計算 */
+      .step-track { display: flex; gap: 6px; flex-wrap: wrap; margin: 2px 0 4px; }
+      .step-track .chip { font-size: 12px; font-weight: 800; padding: 2px 10px; border-radius: 999px; background: #f3ece0; color: var(--muted); }
+      .step-track .chip.done { background: var(--good-soft); color: var(--good); }
+      .step-track .chip.now { background: var(--primary); color: #fff; }
+      .step-head { display: flex; align-items: center; gap: 10px; margin-bottom: 4px; flex-wrap: wrap; }
+      .step-head .step-label { margin-bottom: 0; }
+      .hint-chip { border: 2px solid var(--line); background: #fff; color: var(--primary-dark); border-radius: 999px; padding: 1px 10px; font: inherit; font-size: 13px; font-weight: 800; cursor: pointer; }
+      .hint-chip:active { transform: scale(.96); }
+      .work-log { text-align: center; margin: 0 0 2px; }
+      .work-log .wl-row { font-size: 16px; font-weight: 800; color: var(--muted); margin: 1px 0; line-height: 1.3; animation: fadeUp .4s ease; }
+      .work-log .wl-row .frac { font-size: 16px; }
+      .work-log .wl-row b { color: var(--primary-dark); }
+      .quiz-main .feedback { margin-top: 8px; }
       .field-arrow { font-size: 24px; font-weight: 900; color: var(--muted); }
-      .work-eq { font-size: 24px; font-weight: 800; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin: 8px 0; }
+      .work-eq { font-size: 24px; font-weight: 800; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 2px 0; }
       .work-eq .frac { font-size: 24px; }
+      .eq-flex { display: flex; flex-wrap: wrap; gap: 2px 28px; align-items: flex-start; }
 
       /* キーパッド */
       .side-box { background: #fffaf2; border: 2px solid var(--line); border-radius: var(--radius); padding: 12px; }
       .side-box .sb-title { font-size: 14px; font-weight: 800; color: var(--muted); text-align: center; margin-bottom: 8px; }
       .pad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-      .pad button { border: 2px solid var(--line); background: #fff; border-radius: 12px; font: inherit; font-size: 24px; font-weight: 900; height: 50px; cursor: pointer; color: var(--ink); }
+      .pad button { border: 2px solid var(--line); background: #fff; border-radius: 12px; font: inherit; font-size: 26px; font-weight: 900; height: 54px; cursor: pointer; color: var(--ink); }
       .pad button:active { transform: scale(.95); background: var(--primary-soft); }
-      .pad button.pad-ok { background: var(--good); border-color: var(--good); color: #fff; font-size: 15px; white-space: nowrap; }
+      .pad button.pad-ok { background: #8fcfa9; border-color: #8fcfa9; color: #fff; font-size: 15px; white-space: nowrap; }
+      .pad button.pad-ok.ready { background: var(--good); border-color: var(--good); animation: pulse 1.2s ease-in-out infinite; }
       .pad button.pad-fn { font-size: 17px; color: var(--muted); }
       .side-box.off { opacity: .45; pointer-events: none; }
-      .hint-btn { width: 100%; margin-top: 10px; }
+      .quiz-side { position: sticky; top: 8px; }
 
-      .feedback { margin-top: 10px; border-radius: var(--radius); padding: 10px 14px; display: flex; gap: 12px; align-items: flex-start; }
+      .feedback { margin-top: 10px; border-radius: var(--radius); padding: 7px 12px; display: flex; gap: 12px; align-items: flex-start; }
       .feedback.good { background: var(--good-soft); border: 2px solid var(--good); }
       .feedback.bad { background: var(--bad-soft); border: 2px solid var(--bad); }
       .feedback.info { background: var(--primary-soft); border: 2px solid var(--primary); }
-      .feedback .fb-main { font-size: 17px; font-weight: 800; line-height: 1.5; }
-      .feedback .fb-sub { font-size: 15px; font-weight: 600; line-height: 1.6; margin-top: 2px; }
-      .feedback-navi .navi-avatar { width: 40px; height: 48px; }
-      .feedback-navi .navi-avatar-img { height: 48px; }
+      .feedback .fb-main { font-size: 16px; font-weight: 800; line-height: 1.45; }
+      .feedback .fb-sub { font-size: 14px; font-weight: 600; line-height: 1.5; margin-top: 2px; }
+      .feedback-navi .navi-avatar { width: 34px; height: 40px; }
+      .feedback-navi .navi-avatar-img { height: 40px; }
 
       /* ---------- 探索モード ---------- */
       .explore-layout { display: grid; grid-template-columns: 1fr 320px; gap: 18px; align-items: start; }
@@ -211,6 +244,10 @@
       @media (max-width: 900px) {
         .quiz-layout, .explore-layout { grid-template-columns: 1fr; }
         .home-group { display: none; }
+        .quiz-side { position: sticky; bottom: 6px; top: auto; z-index: 5; }
+        .side-box { box-shadow: 0 -4px 14px rgba(0,0,0,.12); background: #fffaf2; }
+        .side-box.off { display: none; }
+        .pad button { height: 48px; font-size: 24px; }
       }
     </style>
   </head>
@@ -341,22 +378,26 @@
             <div class="quiz-layout">
               <div class="quiz-main">
                 <div class="problem" id="quiz-problem"></div>
+                <div id="quiz-log" class="work-log"></div>
                 <div id="quiz-bars"></div>
                 <div id="quiz-step-area">
-                  <span class="step-label" id="quiz-step-label"></span>
+                  <div class="step-track" id="quiz-track"></div>
+                  <div class="step-head">
+                    <span class="step-label" id="quiz-step-label"></span>
+                    <button class="hint-chip" id="btn-hint" type="button">💡 ヒント</button>
+                  </div>
                   <div class="step-prompt" id="quiz-step-prompt"></div>
                   <div id="quiz-step-body"></div>
                 </div>
+                <div class="feedback hidden" id="quiz-feedback"></div>
               </div>
               <div class="quiz-side">
                 <div class="side-box" id="side-box">
-                  <div class="sb-title">キーパッド（数字を入力）</div>
+                  <div class="sb-title">光っている □ に数を入れよう</div>
                   <div class="pad" id="pad"></div>
-                  <button class="btn hint-btn" id="btn-hint" type="button">ヒントを見る</button>
                 </div>
               </div>
             </div>
-            <div class="feedback hidden" id="quiz-feedback"></div>
           </div>
         </section>
 
@@ -753,6 +794,7 @@
         session.probWrong = false;
         session.firstErrorStage = null;
         session.peekFig = false;
+        session.log = [];
         $("quiz-progress").textContent = (session.idx + 1) + " / " + session.problems.length + " 問";
         $("progress-fill").style.width = (session.idx / session.problems.length * 100) + "%";
         setNavi("quiz-navi", session.naviId, "hint", session.idx === 0 ? "いっしょに解いていこう。" : "次の問題だよ。");
@@ -761,7 +803,7 @@
 
       function problemEquationHTML(p, withAnswer) {
         var op = p.op === "-" ? "－" : "＋";
-        var ans = withAnswer ? fracHTML(p.reduced) : "？";
+        var ans = withAnswer ? fracHTML(p.reduced) : '<span class="frac ghost"><span class="fn">□</span><span class="fd">□</span></span>';
         return fracHTML(p.a) + '<span class="op">' + op + "</span>" + fracHTML(p.b) +
           '<span class="op">＝</span>' + ans;
       }
@@ -889,6 +931,9 @@
           $("quiz-problem").innerHTML = problemEquationHTML(p, stepId === "finish");
         }
         $("quiz-bars").innerHTML = barsForStep(p, stepId);
+        $("quiz-log").innerHTML = stepId === "finish" ? "" : session.log.map(function (h) { return '<div class="wl-row">' + h + "</div>"; }).join("");
+        $("quiz-track").innerHTML = trackHTML(stepId);
+        $("btn-hint").classList.toggle("hidden", stepId === "confirm" || stepId === "finish");
         var peek = $("btn-peek");
         if (peek) peek.addEventListener("click", function () {
           session.peekFig = true;
@@ -926,19 +971,26 @@
         } else if (stepId === "times") {
           prompt.innerHTML = "分母を " + p.L + " にするには、それぞれ<b>何倍</b>すればいい？";
           fields = [];
-          if (p.ka > 1) fields.push({ key: "ka", label: fracHTML(p.a) + " の分母 " + p.a.d + " を何倍？", answer: p.ka, value: "" });
-          if (p.kb > 1) fields.push({ key: "kb", label: fracHTML(p.b) + " の分母 " + p.b.d + " を何倍？", answer: p.kb, value: "" });
-          body.innerHTML = fieldsHTML();
+          if (p.ka > 1) fields.push({ key: "ka", answer: p.ka, value: "" });
+          if (p.kb > 1) fields.push({ key: "kb", answer: p.kb, value: "" });
+          body.innerHTML = fields.map(function (f) {
+            var src = f.key === "ka" ? p.a : p.b;
+            return '<div class="work-eq">' + fracHTML(src) + '<span class="t-text">分母 ' + src.d + ' ×</span>' + boxHTML(f.key) +
+              '<span class="t-text">＝ ' + p.L + '</span><span class="t-text">（何倍？）</span></div>';
+          }).join("");
           bindFields();
           setSideEnabled(true);
         } else if (stepId === "convnum") {
           prompt.innerHTML = "図を見よう。1区画が分かれると、<b>分子も同じ数だけ</b>大きくなるよ。通分した後の分子は？";
           fields = [];
-          if (p.ka > 1) fields.push({ key: "an2", label: fracHTML(p.a) + " → □/" + p.L + " の分子", answer: p.an2, value: "" });
-          if (p.kb > 1) fields.push({ key: "bn2", label: fracHTML(p.b) + " → □/" + p.L + " の分子", answer: p.bn2, value: "" });
-          if (!fields.length) fields.push({ key: "an2", label: fracHTML(p.a) + " → □/" + p.L + " の分子", answer: p.an2, value: "" });
-          body.innerHTML = fieldsHTML() +
-            '<div style="margin-top:8px;"><button class="btn" id="btn-replay" type="button">図の変化をもう一度見る</button></div>';
+          if (p.ka > 1) fields.push({ key: "an2", answer: p.an2, value: "" });
+          if (p.kb > 1) fields.push({ key: "bn2", answer: p.bn2, value: "" });
+          if (!fields.length) fields.push({ key: "an2", answer: p.an2, value: "" });
+          body.innerHTML = '<div class="eq-flex">' + fields.map(function (f) {
+            var src = f.key === "bn2" ? p.b : p.a;
+            return '<div class="work-eq">' + fracHTML(src) + '<span class="op">＝</span>' + fracInputHTML(f.key, p.L) + "</div>";
+          }).join("") + '</div>' +
+            '<div style="margin-top:4px;"><button class="btn" id="btn-replay" type="button">図の変化をもう一度見る</button></div>';
           bindFields();
           var rp = $("btn-replay");
           if (rp) rp.addEventListener("click", function () { playSplitAnimation(); });
@@ -946,31 +998,31 @@
           if (figSize() !== "none") setTimeout(playSplitAnimation, 250);
         } else if (stepId === "calcnum") {
           prompt.innerHTML = p.op === "-" ?
-            "1つ分の大きさがそろったね。通分した分子で、<b>ひいて</b>みよう。" :
-            "1つ分の大きさがそろったね。通分した分子を<b>たそう</b>。";
-          fields = [{ key: "res", label: "答えの分子（分母は " + p.L + "）", answer: p.resN, value: "" }];
+            "1つ分の大きさがそろったね。通分した分子で、<b>ひいて</b>みよう。<b>分母はそのまま</b>だよ。" :
+            "1つ分の大きさがそろったね。通分した分子を<b>たそう</b>。<b>分母はそのまま</b>だよ。";
+          fields = [{ key: "res", answer: p.resN, value: "" }];
           body.innerHTML = '<div class="work-eq">' + fracHTML({ n: p.an2, d: p.L }) +
             '<span class="op">' + (p.op === "-" ? "－" : "＋") + "</span>" + fracHTML({ n: p.bn2, d: p.L }) +
-            '<span class="op">＝</span>' + fieldsHTML() + "</div>";
+            '<span class="op">＝</span>' + fracInputHTML("res", p.L) + "</div>";
           bindFields();
           setSideEnabled(true);
         } else if (stepId === "reduce") {
-          prompt.innerHTML = "答えは " + p.resN + "/" + p.L + "。まだ分けられるよ。<b>いちばん小さい分数</b>に約分しよう。";
+          prompt.innerHTML = "答えは " + p.resN + "/" + p.L + "。まだ分けられるよ。<b>いちばん小さい分数</b>に約分しよう。上のわくが分子、下のわくが分母。";
           fields = [
-            { key: "rn", label: "約分した分子", answer: p.reduced.n, value: "" },
-            { key: "rd", label: "約分した分母", answer: p.reduced.d, value: "" }
+            { key: "rn", answer: p.reduced.n, value: "" },
+            { key: "rd", answer: p.reduced.d, value: "" }
           ];
           body.innerHTML = '<div class="work-eq">' + fracHTML({ n: p.resN, d: p.L }) +
-            '<span class="op">＝</span>' + fieldsHTML() + "</div>";
+            '<span class="op">＝</span>' + fracInputHTML("rn", "rd") + "</div>";
           bindFields();
           setSideEnabled(true);
         } else if (stepId === "answer") {
-          prompt.innerHTML = "答えを入力しよう。<b>約分</b>もわすれずに。";
+          prompt.innerHTML = "答えを<b>分数</b>で入力しよう。上のわくが分子、下のわくが分母。<b>約分</b>もわすれずに。";
           fields = [
-            { key: "rn", label: "答えの分子", answer: p.reduced.n, value: "" },
-            { key: "rd", label: "答えの分母", answer: p.reduced.d, value: "" }
+            { key: "rn", answer: p.reduced.n, value: "" },
+            { key: "rd", answer: p.reduced.d, value: "" }
           ];
-          body.innerHTML = '<div class="work-eq">' + problemEquationHTML(p, false).replace("？", "") + fieldsHTML() + "</div>";
+          body.innerHTML = '<div class="work-eq"><span class="t-text">答え ＝</span>' + fracInputHTML("rn", "rd") + "</div>";
           bindFields();
           setSideEnabled(true);
         } else if (stepId === "finish") {
@@ -983,6 +1035,25 @@
           if (!session.probWrong) confetti($("quiz-bars"));
         }
         renderPad();
+        refreshFields();
+      }
+      var TRACK_NAMES = { denom: "分母をそろえる", times: "何倍にする", convnum: "分子を求める", calcnum: "分子の計算", reduce: "約分", answer: "答えを書く" };
+      function trackHTML(stepId) {
+        var cur = session.steps.indexOf(stepId);
+        return session.steps.map(function (s, i) {
+          if (!TRACK_NAMES[s]) return "";
+          var cls = stepId === "finish" || i < cur ? "done" : (i === cur ? "now" : "");
+          return '<span class="chip ' + cls + '">' + (cls === "done" ? "✓ " : "") + TRACK_NAMES[s] + "</span>";
+        }).join("");
+      }
+      function logStep(stepId, p) {
+        var op = p.op === "-" ? " － " : " ＋ ";
+        var h = "";
+        if (stepId === "denom") h = "分母を <b>" + p.L + "</b> にそろえる";
+        else if (stepId === "convnum") h = fracHTML(p.a) + " ＝ " + fracHTML({ n: p.an2, d: p.L }) + "　　" + fracHTML(p.b) + " ＝ " + fracHTML({ n: p.bn2, d: p.L });
+        else if (stepId === "calcnum") h = fracHTML({ n: p.an2, d: p.L }) + op + fracHTML({ n: p.bn2, d: p.L }) + " ＝ " + fracHTML({ n: p.resN, d: p.L });
+        else if (stepId === "reduce") h = fracHTML({ n: p.resN, d: p.L }) + " ＝ " + fracHTML(p.reduced);
+        if (h) session.log.push(h);
       }
       function bindBars(stepId) {
         if (stepId === "convnum" && figSize() !== "none") {
@@ -1014,19 +1085,27 @@
       }
 
       /* ================= 入力欄とキーパッド ================= */
-      function fieldsHTML() {
-        var html = '<div class="field-row">';
-        fields.forEach(function (f, i) {
-          if (i > 0) html += '<span class="field-arrow">→</span>';
-          html += '<div class="field-cell"><div class="f-label">' + f.label + '</div>' +
-            '<div class="num-field" data-key="' + f.key + '" tabindex="0">' + (f.value === "" ? "？" : f.value) + "</div></div>";
-        });
-        html += "</div>";
-        return html;
+      function getField(key) {
+        var r = null;
+        fields.forEach(function (f) { if (f.key === key) r = f; });
+        return r;
+      }
+      function boxHTML(key) {
+        var f = getField(key);
+        var v = f ? f.value : "";
+        return '<div class="num-field' + (v === "" ? " empty" : "") + '" data-key="' + key + '" tabindex="0">' + (v === "" ? "？" : v) + "</div>";
+      }
+      /* 分数のかたちの入力欄：上＝分子、下＝分母（分母が数なら固定表示） */
+      function fracInputHTML(nKey, d) {
+        return '<span class="frac-in"><span class="fi-n">' + boxHTML(nKey) + '</span><span class="fi-line"></span><span class="fi-d">' +
+          (typeof d === "number" ? '<span class="fixed" title="分母はそのまま">' + d + "</span>" : boxHTML(d)) + "</span></span>";
       }
       function bindFields() {
         document.querySelectorAll("#quiz-step-body .num-field").forEach(function (el) {
-          el.addEventListener("click", function () { setActiveField(el.getAttribute("data-key")); });
+          el.addEventListener("click", function () {
+            var f = getField(el.getAttribute("data-key"));
+            if (f && !f.locked && stepState && !stepState.flashing) setActiveField(f.key);
+          });
         });
         if (fields.length) setActiveField(fields[0].key);
       }
@@ -1039,8 +1118,17 @@
       function refreshFields() {
         fields.forEach(function (f) {
           var el = document.querySelector('#quiz-step-body .num-field[data-key="' + f.key + '"]');
-          if (el) el.textContent = f.value === "" ? "？" : f.value;
+          if (el) { el.textContent = f.value === "" ? "？" : f.value; el.classList.toggle("empty", f.value === ""); }
         });
+        var ok = document.querySelector("#pad .pad-ok");
+        if (ok) ok.classList.toggle("ready", fields.length > 0 && fields.every(function (f) { return f.value !== ""; }));
+      }
+      function moveActive(dir) {
+        var open = fields.filter(function (f) { return !f.locked; });
+        if (!open.length) return;
+        var i = 0;
+        open.forEach(function (f, j) { if (f.key === activeFieldKey) i = j; });
+        setActiveField(open[(i + dir + open.length) % open.length].key);
       }
       function setSideEnabled(on) {
         $("side-box").classList.toggle("off", !on);
@@ -1057,12 +1145,14 @@
         });
       }
       function padPress(k) {
-        if (!stepState || stepState.revealed || stepState.done) return;
+        if (!stepState || stepState.revealed || stepState.done || stepState.flashing) return;
         if (!fields.length || !activeFieldKey) return;
         var f = null;
         fields.forEach(function (x) { if (x.key === activeFieldKey) f = x; });
         if (!f) return;
         if (k === "OK") { checkFields(); return; }
+        if (f.locked) return;
+        if (k === "0" && f.value === "") return;
         playSound("click");
         if (k === "⌫") f.value = f.value.slice(0, -1);
         else if (f.value.length < 2) f.value += k;
@@ -1085,22 +1175,49 @@
         stepWrong(stageKey, val);
       }
       function checkFields() {
-        if (stepState.revealed || stepState.done) return;
+        if (stepState.revealed || stepState.done || stepState.flashing) return;
         var stepId = stepState.id;
-        var allOk = true, wrongVal = null;
+        var empty = null;
+        fields.forEach(function (f) { if (!empty && f.value === "") empty = f; });
+        if (empty) {
+          showFeedback("info", session.naviId, "hint", "あいている □ があるよ。", "数を入れてから「けってい」を押そう。");
+          setActiveField(empty.key);
+          return;
+        }
+        var wrongFields = [], wrongVal = null;
         fields.forEach(function (f) {
-          if (parseInt(f.value, 10) !== f.answer) { allOk = false; wrongVal = f; }
+          if (parseInt(f.value, 10) !== f.answer) { wrongFields.push(f); wrongVal = f; }
         });
-        if (allOk) { stepCorrect(); return; }
+        if (!wrongFields.length) { stepCorrect(); return; }
         var stageKey = stepId === "convnum" ? "convnum" : stepId;
         if (stepId === "answer") {
           var rn = fieldVal("rn"), rd = fieldVal("rd");
           var p = currentProblem();
           if (rn === p.resN && rd === p.resD) stageKey = "reduce";
-          else if (rn === p.a.n + (p.op === "-" ? -p.b.n : p.b.n) && rd === p.a.d + p.b.d) stageKey = "calcnum";
           else stageKey = "calcnum";
         }
+        /* 合っていた欄は緑で固定、ちがう欄だけ赤くゆらして、あとで空にする */
+        fields.forEach(function (f) {
+          var el = document.querySelector('#quiz-step-body .num-field[data-key="' + f.key + '"]');
+          if (!el) return;
+          if (wrongFields.indexOf(f) >= 0) { el.classList.remove("active"); el.classList.add("wrong"); }
+          else { f.locked = true; el.classList.remove("active"); el.classList.add("done"); }
+        });
+        var st = stepState;
         stepWrong(stageKey, wrongVal);
+        if (st.revealed) return;
+        st.flashing = true;
+        setTimeout(function () {
+          if (stepState !== st || st.done || st.revealed) return;
+          wrongFields.forEach(function (f) {
+            f.value = "";
+            var el = document.querySelector('#quiz-step-body .num-field[data-key="' + f.key + '"]');
+            if (el) el.classList.remove("wrong");
+          });
+          st.flashing = false;
+          refreshFields();
+          setActiveField(wrongFields[0].key);
+        }, 650);
       }
       function fieldVal(key) {
         var v = null;
@@ -1112,6 +1229,7 @@
         stepState.done = true;
         var p = currentProblem();
         playSound("correct");
+        document.querySelectorAll("#quiz-step-body .num-field").forEach(function (el) { el.classList.remove("active", "wrong"); el.classList.add("done"); });
         confetti($("quiz-bars"));
         showFeedback("good", session.naviId, "correct", pick(["その通り！", "できてる。すごいじゃん！", "いいね、その調子！"]),
           stepIdPraise(stepState.id, p));
@@ -1187,7 +1305,7 @@
         fields.forEach(function (f) {
           f.value = String(f.answer);
           var el = document.querySelector('#quiz-step-body .num-field[data-key="' + f.key + '"]');
-          if (el) { el.classList.add("done"); el.classList.remove("active"); }
+          if (el) { el.classList.add("done"); el.classList.remove("active", "wrong"); el.classList.remove("empty"); }
         });
         refreshFields();
         var body = $("quiz-step-body");
@@ -1196,6 +1314,7 @@
           hints.body + " 図と見比べてから、次へ進もう。");
         var btn = document.createElement("button");
         btn.className = "btn primary big";
+        btn.id = "btn-reveal-next";
         btn.type = "button";
         btn.textContent = "分かった、次へ進む";
         btn.style.marginTop = "10px";
@@ -1225,6 +1344,7 @@
         fb.innerHTML = "";
       }
       function advanceStep() {
+        logStep(stepState.id, currentProblem());
         session.stepIdx++;
         if (session.stepIdx >= session.steps.length) { finishProblem(); return; }
         renderStep();
@@ -1672,6 +1792,21 @@
       /* ================= イベント ================= */
       function init() {
         renderTop();
+        document.addEventListener("keydown", function (e) {
+          if ($("view-quiz").classList.contains("hidden") || !session || !stepState) return;
+          if (e.ctrlKey || e.metaKey || e.altKey) return;
+          var k = e.key;
+          if (/^[0-9]$/.test(k)) { e.preventDefault(); padPress(k); }
+          else if (k === "Backspace" || k === "Delete") { e.preventDefault(); padPress("⌫"); }
+          else if (k === "ArrowLeft" || k === "ArrowUp") { if (fields.length) { e.preventDefault(); moveActive(-1); } }
+          else if (k === "ArrowRight" || k === "ArrowDown" || k === "Tab") { if (fields.length && !stepState.revealed && !stepState.done) { e.preventDefault(); moveActive(1); } }
+          else if (k === "Enter") {
+            if (e.target && e.target.tagName === "BUTTON") return;
+            e.preventDefault();
+            var nb = $("btn-step-next") || $("btn-reveal-next");
+            if (nb) nb.click(); else padPress("OK");
+          }
+        });
         $("btn-sound").addEventListener("click", function () {
           settings.sound = !settings.sound;
           saveSettings();
